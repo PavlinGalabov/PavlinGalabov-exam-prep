@@ -23,7 +23,7 @@ function setup(app, grades) {
   });
 
   app.get('/add-grade', function(req, res) {
-    let model = { title: "Add Grade" };
+    let model = { title: "Add Grade1" };
     res.render('add-grade', model);
   });
 
