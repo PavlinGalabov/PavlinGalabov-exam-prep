@@ -51,7 +51,7 @@ suite('Add Grades page', function() {
       }
     );
     let body = await res.text();
-    let errMsg = body.includes("Cannot add grade. Subject and value fields are required!");
+    let errMsg = body.includes("WTF. Cannot add grade.");
     assert.ok(errMsg, "Add invalid grade should display an error message");
 
     res = await fetch("http://localhost:8888/");
