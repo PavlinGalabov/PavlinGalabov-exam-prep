@@ -23,7 +23,7 @@ function setup(app, grades) {
   });
 
   app.get('/add-grade', function(req, res) {
-    let model = { title: "Add Grade1" };
+    let model = { title: "Add Grade" };
     res.render('add-grade', model);
   });
 
@@ -35,7 +35,7 @@ function setup(app, grades) {
     if (paramEmpty(req.body.subject) || paramEmpty(req.body.value)) {
       let model = {
         title: "Add Grade", 
-        errMsg: "Cannot add grade. Subject and value fields are required!"
+        errMsg: "WTF. Cannot add grade."
       };
       res.render('add-grade', model);
       return;
